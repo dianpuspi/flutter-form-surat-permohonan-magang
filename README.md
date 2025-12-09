@@ -1,2 +1,2 @@
 # flutter-form-surat-permohonan-magang
-Tugas Flutter Form InputMobile Programming
+Tugas Flutter Form Input Mobile Programming - Dian Puspitasari (23670171)
