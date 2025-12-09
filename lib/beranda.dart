@@ -27,7 +27,7 @@ class _FormSuratMagangState extends State<FormSuratMagang> {
   // Variabel untuk edit
   int? _editingIndex;
 
-  // Hanya menyertakan 3 program studi
+  // 3 program studi
   final List<String> _prodiList = [
     'Teknik Sipil',
     'Informatika',
@@ -103,7 +103,7 @@ class _FormSuratMagangState extends State<FormSuratMagang> {
       'kaprodi': _selectedKaprodi ?? '-',
       'npp': _selectedNPP ?? '-',
       'createdAt': _editingIndex != null ? _submissions[_editingIndex!]['createdAt'] : DateTime.now().toIso8601String(),
-      // Hanya tambahkan updatedAt jika sedang edit
+      // Tambahkan updatedAt jika sedang edit
       'updatedAt': _editingIndex != null ? DateTime.now().toIso8601String() : null,
     };
 
@@ -247,7 +247,7 @@ class _FormSuratMagangState extends State<FormSuratMagang> {
         'NPP Kaprodi: ${item['npp']}\n\n'
         'Diajukan: ${item['createdAt']}';
     
-    // Tambahkan updatedAt hanya jika ada
+    // Tambahkan updatedAt jika ada
     if (item['updatedAt'] != null) {
       detailText += '\nDiperbarui: ${item['updatedAt']}';
     }
